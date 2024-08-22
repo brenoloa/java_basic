@@ -4,25 +4,40 @@ import java.util.Scanner;
 public class questao5 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        char escolha;
+        while (true) {
+                 float n1, n2, n3, med;
+            //variaveis
+            
+            System.out.print("Digite n1: >>: ");
+            n1 = scan.nextFloat();
+            System.out.print("Digite n2: >>: ");
+            n2 = scan.nextFloat();
+            System.out.print("Digite n3: >>: ");
+            n3 = scan.nextFloat();
+            // recebimento das notas.
+            
+            n1 = n1 * 2;
+            n2 = n2 * 3;
+            n3 = n3 * 5;
+    
+            med = (n1 + n2 + n3) / 10;
+    
+            System.out.println("A média é: " + med);
         
-        float n1, n2, n3, med;
-        //variaveis
-        
-        System.out.print("Digite n1: >>: ");
-        n1 = scan.nextFloat();
-        System.out.print("Digite n2: >>: ");
-        n2 = scan.nextFloat();
-        System.out.print("Digite n3: >>: ");
-        n3 = scan.nextFloat();
-        // recebimento das notas.
-        
-        n1 = n1 * 2;
-        n2 = n2 * 3;
-        n3 = n3 * 5;
+            //display
+            scan.nextLine();
+            System.out.println("Deseja continuar? (s ou n)");
+            escolha = scan.nextLine().charAt(0);
 
-        med = (n1 + n2 + n3) / 10;
+            if (escolha == 's'){
+                continue;
+            }
+            else{
+                break;
+            }
 
-        System.out.println("A média é: " + med);
+        }
     
     }
 }
