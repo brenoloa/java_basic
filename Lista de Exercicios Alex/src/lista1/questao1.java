@@ -6,26 +6,26 @@ public class questao1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         char escolha;
-        float quadrado1, quadrado2, d;
-        float x1, x2, y1, y2;
+        Double d;
+        Double x1, x2, y1, y2;
         
         while (true) { 
             
             //recebendo os valores.
             System.out.print("insira x1: ");
-            x1 = scan.nextFloat();
+            x1 = scan.nextDouble();
             System.out.print("insira x2: ");
-            x2 = scan.nextFloat();
+            x2 = scan.nextDouble();
             System.out.print("insira y1: ");
-            y1 = scan.nextFloat();
+            y1 = scan.nextDouble();
             System.out.print("insira y2: ");
-            y2 = scan.nextFloat();
+            y2 = scan.nextDouble();
         
             //formula
             //calculando os quadrados
-            quadrado1 = (x2 - x1) * (x2 - x1);
-            quadrado2 = (y2 - y1) * (y2 - y1);
-            d = (x2 - x1) * quadrado1 + (y2 - y1) * quadrado2;
+            d = Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2);
+
+
             System.out.println("A distancia é " + d);
         
             scan.nextLine();

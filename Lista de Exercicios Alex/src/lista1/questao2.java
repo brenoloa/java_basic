@@ -6,24 +6,23 @@ public class questao2 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         char escolha;
-        float a, b, c, d, r, s, quadrado1, quadrado2;
-
+        Double a, b, c, d, r, s;
         while (true) { 
             //recebendo ops numeros
             System.out.print("Insira o valor de A:  ");
-            a = scan.nextFloat();
+            a = scan.nextDouble();
             System.out.print("Insira o valor de B:  ");
-            b = scan.nextFloat();
+            b = scan.nextDouble();
             System.out.print("Insira o valor de C:  ");
-            c = scan.nextFloat();
+            c = scan.nextDouble();
 
             //calculando
-            quadrado1 = (a + b) * (a + b);
-            quadrado2 = (b + c) * (b + c);
+           
 
-            r = (a + b) * quadrado1;
-
-            s = (b + c) * quadrado2;
+            r = Math.pow((a + b), 2);
+            
+            s = Math.pow((b +c ), 2);
+           
 
             d = (r + s) / 2;
 
