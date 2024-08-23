@@ -9,7 +9,7 @@ public class questao1 {
         float quadrado1, quadrado2, d;
         float x1, x2, y1, y2;
         
-        while (true) { 6
+        while (true) { 
             
             //recebendo os valores.
             System.out.print("insira x1: ");
